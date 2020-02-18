@@ -1,10 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.40633">
-<testcase classname="RTSM-CP4 Application Test" name="Validate the Home Page Test" time="12.40633">
-<system-out><![CDATA[Given user opens Browser....................................................passed
-Then user is on Login page..................................................passed
-Then user login into app....................................................passed
-Then validate the home page.................................................passed
-Then create new program.....................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.110333">
+<testcase classname="RTSM-CP4 Application Test" name="Validate the Home Page Test" time="25.110333">
+<failure message="org.openqa.selenium.TimeoutException: timeout&#10;  (Session info: chrome=80.0.3987.106)&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: '005820', ip: '10.128.80.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\KotturJ\AppData\Local\Temp\scoped_dir17028_860552873}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53173}, acceptInsecureCerts=false, browserVersion=80.0.3987.106, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]&#10;Session ID: 7fbc20d814d2e16f8ef7b801f6930d73&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)&#13;&#10;&#9;at com.pxl.util.TestBase.initialization(TestBase.java:49)&#13;&#10;&#9;at com.qa.StepDefinations.HomePageSteps.user_opens_Browser(HomePageSteps.java:26)&#13;&#10;&#9;at ✽.Given user opens Browser(login.feature:4)&#13;&#10;"><![CDATA[Given user opens Browser....................................................failed
+Then user is on Login page..................................................skipped
+Then user login into app....................................................skipped
+Then validate the home page.................................................skipped
+Then create new program.....................................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=80.0.3987.106)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: '005820', ip: '10.128.80.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\KotturJ\AppData\Local\Temp\scoped_dir17028_860552873}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53173}, acceptInsecureCerts=false, browserVersion=80.0.3987.106, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 7fbc20d814d2e16f8ef7b801f6930d73
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at com.pxl.util.TestBase.initialization(TestBase.java:49)
+	at com.qa.StepDefinations.HomePageSteps.user_opens_Browser(HomePageSteps.java:26)
+	at ✽.Given user opens Browser(login.feature:4)
+]]></failure>
 </testcase>
 </testsuite>

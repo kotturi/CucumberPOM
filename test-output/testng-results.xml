@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="BDDCucumber with Page object Model Test Suite" duration-ms="13030" started-at="2020-02-13T11:59:26Z" finished-at="2020-02-13T11:59:39Z">
+  <suite name="Default suite" duration-ms="19474" started-at="2020-02-18T17:07:52Z" finished-at="2020-02-18T17:08:12Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@75881071]" name="feature" class="com.qa.Runner.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@df27fae]" name="feature" class="com.qa.Runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="RTSM ClinPhone Test" duration-ms="13030" started-at="2020-02-13T11:59:26Z" finished-at="2020-02-13T11:59:39Z">
+    <test name="Default test" duration-ms="19474" started-at="2020-02-18T17:07:52Z" finished-at="2020-02-18T17:08:12Z">
       <class name="com.qa.Runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@75881071]" name="setUpClass" is-config="true" duration-ms="182" started-at="2020-02-13T11:59:26Z" finished-at="2020-02-13T11:59:26Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@df27fae]" name="setUpClass" is-config="true" duration-ms="193" started-at="2020-02-18T17:07:52Z" finished-at="2020-02-18T17:07:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@75881071]" name="feature" duration-ms="12513" started-at="2020-02-13T11:59:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-02-13T11:59:38Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@df27fae]" name="feature" duration-ms="19011" started-at="2020-02-18T17:07:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-02-18T17:08:12Z">
           <params>
             <param index="0">
               <value>
@@ -25,11 +25,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@75881071]" name="tearDownClass" is-config="true" duration-ms="268" started-at="2020-02-13T11:59:38Z" finished-at="2020-02-13T11:59:39Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@df27fae]" name="tearDownClass" is-config="true" duration-ms="195" started-at="2020-02-18T17:08:12Z" finished-at="2020-02-18T17:08:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.qa.Runner.TestRunner -->
-    </test> <!-- RTSM ClinPhone Test -->
-  </suite> <!-- BDDCucumber with Page object Model Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

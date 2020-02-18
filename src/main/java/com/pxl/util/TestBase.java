@@ -30,7 +30,7 @@ public class TestBase {
 		}
 	}
 	public static void initialization(){
-		System.out.println("Started initialization....");
+		System.out.println("Started initialization of CP4 Cusumber ....");
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
