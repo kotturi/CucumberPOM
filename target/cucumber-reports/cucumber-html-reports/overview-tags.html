@@ -42,17 +42,62 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Error Page</title>
+<title>Cucumber Reports (no 1) - Tags Overview</title>
 
 
-  <style>
-  .error-message {
-    color:red;
-    font-weight: bold;
-    background-color: lightpink;
-    font-family: monospace;
-  }
-  </style>
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+    var chartData = {
+        labels:  [] ,
+        datasets: [
+            {
+                label: "Passed",
+                backgroundColor: "#92DD96",
+                data:  []             },
+            {
+                label: "Failed",
+                backgroundColor: "#F2928C",
+                data:  []             },
+            {
+                label: "Skipped",
+                backgroundColor: "#8AF",
+                data:  []             },
+            {
+                label: "Pending",
+                backgroundColor: "#F5F28F",
+                data:  []             },
+            {
+                label: "Undefined",
+                backgroundColor: "#F5B975",
+                data:  []             }
+        ]
+    };
+
+    var context = document.getElementById("tags-chart");
+    window.myBar = new Chart(context, {
+        type: "bar",
+        data: chartData,
+        options: {
+            tooltips: {
+                mode: "label"
+            },
+            responsive: true,
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    stacked: true
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
+    });
+
+});  </script>
 </head>
 <body>
 
@@ -62,7 +107,7 @@ $(document).ready(function() {
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
                 <li role="presentation" ><a href="overview-features.html">Features</a></li>
-        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"      class="active" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
                 <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
@@ -70,54 +115,50 @@ $(document).ready(function() {
   </div>
 </nav>
 
-<div id="report-lead" class="container-fluid">
-  <div class="col-md-10 col-md-offset-1">
-    <h2>Error</h2>
-          <p>Something went wrong with project RTSM CP4, build 1</p>
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>RTSM CP4</td>
+              <td>1</td>
+            <td>19 Feb 2020, 10:30</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
       </div>
 </div>
 
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tags Statistics</h2>
+          <p>The following graph shows passing and failing statistics for tags</p>
+      </div>
+</div>
+
+
+
+<br>
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="message">
-        <pre>net.masterthought.cucumber.ValidationException: No report file was added!
-	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:55)
-	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:88)
-	at net.masterthought.cucumber.CucumberReportGeneratorMojo.execute(CucumberReportGeneratorMojo.java:112)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:290)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:194)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-</pre>
-      </div>
-      <div>Trying to generate report from following files. Make sure they are valid cucumber report files:</div>
-      <div class="error-files">
-        <pre>
-                  </pre>
-      </div>
-    </div>
+              <p>You have no tags in your cucumber report</p>
+          </div>
   </div>
 </div>
-
 
 <nav class="navbar navbar-default" id="footer">
   <div class="container-fluid">

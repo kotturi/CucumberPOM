@@ -1,9 +1,0 @@
-com\pxl\util\TestBase.class
-com\qa\StepDefinations\HomePageSteps.class
-com\pxl\util\ExcelReader.class
-com\pxl\util\TestUtil.class
-com\pxl\pages\LoginPage.class
-com\pxl\pages\HomePage.class
-com\pxl\pages\ProgramCreation.class
-com\pxl\util\Screenshots.class
-com\qa\Runner\TestRunner.class
