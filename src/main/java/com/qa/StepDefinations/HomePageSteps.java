@@ -1,12 +1,7 @@
 package com.qa.StepDefinations;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.concurrent.TimeUnit;
-
 import org.junit.Assert;
-import org.openqa.selenium.By;
-
 import com.pxl.pages.HomePage;
 import com.pxl.pages.LoginPage;
 import com.pxl.pages.ProgramCreation;
@@ -30,7 +25,7 @@ public void user_opens_Browser() throws Throwable {
 public void user_is_on_Login_page() throws Throwable {
 	loginpage = new LoginPage();
 	String title=loginpage.validateLoginPageTitle();
-	//Assert.assertEquals("Parexel IRT Login", title);
+	Assert.assertEquals("Parexel IRT Login", title);
 	
 }	
 
@@ -43,7 +38,7 @@ public void user_login_into_app() throws Throwable {
 @Then("^validate the home page$")
 public void validate_the_home_page() throws Throwable {
 	String title=homepage.validateHomePageTitle();
-	//Assert.assertEquals("Parexel - Welcome to your Dashboard", title);
+	Assert.assertEquals("Parexel - Welcome to your Dashboard", title);
 	if(homepage.Logout())
 	{
 		System.out.println("User successfully Login to the app");

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.152218">
-<testcase classname="RTSM-CP4 Application Test" name="Validate the Home Page Test" time="16.152218">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.094664">
+<testcase classname="RTSM-CP4 Application Test" name="Validate the Home Page Test" time="17.094664">
 <system-out><![CDATA[Given user opens Browser....................................................passed
 Then user is on Login page..................................................passed
 Then user login into app....................................................passed
