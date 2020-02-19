@@ -43,35 +43,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_Browser()"
 });
 formatter.result({
-  "duration": 6533932500,
+  "duration": 6188742700,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_Login_page()"
 });
 formatter.result({
-  "duration": 46265800,
+  "duration": 54461100,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_login_into_app()"
 });
 formatter.result({
-  "duration": 4855894400,
+  "duration": 5039162800,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.validate_the_home_page()"
 });
 formatter.result({
-  "duration": 2348301100,
+  "duration": 2327800700,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.create_new_program()"
 });
 formatter.result({
-  "duration": 2187810900,
+  "duration": 2542050300,
   "status": "passed"
 });
 });

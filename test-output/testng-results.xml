@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDDCucumber with Page object Model Test Suite" duration-ms="1147" started-at="2020-02-19T09:04:28Z" finished-at="2020-02-19T09:04:30Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@710726a3]" name="feature" class="com.qa.Runner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="RTSM ClinPhone Test" duration-ms="1147" started-at="2020-02-19T09:04:28Z" finished-at="2020-02-19T09:04:30Z">
+      <class name="com.qa.Runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@710726a3]" name="setUpClass" is-config="true" duration-ms="251" started-at="2020-02-19T09:04:28Z" finished-at="2020-02-19T09:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@710726a3]" name="feature" duration-ms="473" started-at="2020-02-19T09:04:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-02-19T09:04:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RTSM-CP4 Application Test]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\CucumberPOM\src\main\java\com\pxl\util\BrowserDrivers\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.IllegalStateException: The driver executable does not exist: C:\CucumberPOM\src\main\java\com\pxl\util\BrowserDrivers\chromedriver.exe
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at com.qa.Runner.TestRunner.feature(TestRunner.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\CucumberPOM\src\main\java\com\pxl\util\BrowserDrivers\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+at com.pxl.util.TestBase.initialization(TestBase.java:38)
+at com.qa.StepDefinations.HomePageSteps.user_opens_Browser(HomePageSteps.java:26)
+at ✽.Given user opens Browser(login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@710726a3]" name="tearDownClass" is-config="true" duration-ms="267" started-at="2020-02-19T09:04:29Z" finished-at="2020-02-19T09:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.Runner.TestRunner -->
+    </test> <!-- RTSM ClinPhone Test -->
+  </suite> <!-- BDDCucumber with Page object Model Test Suite -->
+</testng-results>
