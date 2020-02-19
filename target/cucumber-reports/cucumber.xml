@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.821371">
+<testcase classname="RTSM-CP4 Application Test" name="Validate the Home Page Test" time="13.821371">
+<system-out><![CDATA[Given user opens Browser....................................................passed
+Then user is on Login page..................................................passed
+Then user login into app....................................................passed
+Then validate the home page.................................................passed
+Then create new program.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

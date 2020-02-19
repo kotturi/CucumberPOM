@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate the Home Page Test",
+        "description": "",
+        "id": "rtsm-cp4-application-test;validate-the-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5561893100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens Browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28286400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Login page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5196638900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login into app",
+            "match": {
+              "location": "HomePageSteps.user_login_into_app()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2035686200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate the home page",
+            "match": {
+              "location": "HomePageSteps.validate_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998866300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "create new program",
+            "match": {
+              "location": "HomePageSteps.create_new_program()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "RTSM-CP4 Application Test",
+    "description": "",
+    "id": "rtsm-cp4-application-test",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]

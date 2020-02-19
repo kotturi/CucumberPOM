@@ -20,8 +20,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 				"pretty",
 				"html:target/cucumber-reports/cucumber-html-report",
 				"json:target/cucumber-reports/TestReport.json",
-				"junit:target/cucumber-reports/cucumber.xml"
-				"return: target/cucumber-reports/return.txt\"
+				"junit:target/cucumber-reports/cucumber.xml",
+				//"return: target/cucumber-reports/return.txt"
 		//		"return:target/cucumber-reports/return.txt"
 //		format= {"pretty",
 //				"html:test-output", 
